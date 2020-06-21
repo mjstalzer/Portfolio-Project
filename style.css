@@ -76,6 +76,10 @@ footer {
             left: 0;
             bottom:70px}
 
+.contact-box {
+            padding: 20px;    
+                            }
+
 @media screen and (max-width: 768px){
     main {
         width: 90%;
