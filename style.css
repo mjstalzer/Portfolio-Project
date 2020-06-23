@@ -1,87 +1,212 @@
+/* This sets the font for the entire website and on all screen sizes. */
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-header h4 {
-    text-align: center;
-    padding: 30px;
-    margin-left: 50px;
-    width: 20%;
-    background-color: teal;
-    color: whitesmoke;
-    float: left;
-    height: 90px
+/* Sets the background of the body on all screens. */
+body {
+    background-image: url("wire-frame-background.png");
 }
 
+/* Styling for my name on the header */
+.navbar-brand {
+text-align: center !important;
+padding: 30px;
+margin-left: 50px;
+width: 200px;
+background-color: rgb(0, 172, 157);
+color: white !important;
+float: left;
+height: 90px}
+
+/* This sets the width, height, color, and some padding to the navbar */
 header nav {
     width: 100%;
     padding-top: 30px;
-    background-color: whitesmoke;
+    background-color: white;
     height: 90px;
 }
 
-header ul {
+/* This moves the navbar links slightly left (from the far right of the page). */
+.navbar-nav {
     margin-right: 50px;
 }
 
-
+/* Applies styling to the 3 links on the right of the navbar */
 header a {
     color:gray;
+    border-right:lightgray;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
 }
-body {
-    background-image: url("wire-frame-background.png");
 
+/* Sets height and padding for the main section. */
+main{
+    min-height: 100%;
+    padding-bottom: 110px;
 }
 
-main {
-    background-color: whitesmoke;
+/* Styling for the box that contains the focal point of the site. */
+.container {
+    background-color: white;
     margin-top: 20px;
     margin-left: 30px;
     width: 55%;
     padding-top: 20px;
+    padding-bottom: 10px;
+    overflow: auto;
 }
 
-main h1 {color: teal;}
+/* This styles the header above the content */
+main h1 {color: rgb(0, 172, 157);}
 
-.grey-line { width: 90%;
+/* Styles the line below the header and above the content. Acts as a visual divider. */
+.grey-line { width: 100%;
             height: 4px;
             background-color: lightgray;
-            margin: 20px;
-            margin-left:20px;}
-
+            margin-top: 20px;
+            margin-bottom:20px;
+            }
+/* Formats the main paragraph about me. */
 main p {line-height: 200%;
         color: gray;
         font-weight: lighter;}
 
+/* Formats image placement and size so text can be placed beside it. */
 main img {float: left;
-        margin-right: 20px}
+        margin:auto;
+        margin-right: 15px;
+        }
 
+/* Styling for the footer at the bottom of each page. */
 footer {
     font-size: 10px;
-    color: whitesmoke;
+    color: white;
     text-align: center;
     background-color: gray;
-    position: fixed;
-    left: 0;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 70px;
     padding: 25px;
 }
 
+/* Styles the skinny teal line above footer */
 .teal-line {height: 10px;
             width: 100%;
-            background-color: teal;
-            position: fixed;
+            background-color: rgb(0, 172, 157);
+            /* position: relative; */
             left: 0;
             bottom:70px}
 
+/* Styles the box on the contact page */
 .contact-box {
-            padding: 20px;    
+            padding: 20px; 
+            background-color: white;   
                             }
+/* Gives aditional sytling to Bootstaps button on contact page. */
+.btn {
+    background-color: rgb(0, 172, 157);
+    border-color: rgb(0, 172, 157);
+}
 
-@media screen and (max-width: 768px){
-    main {
-        width: 90%;
+/* Styling to the descriptive banners on portfolio images. */
+.carousel-caption {
+    background-color: rgb(0, 172, 157);
+    padding: 5px;
+    left: 5%;
+    bottom: 5px;
+    width: 90%;
+}
+
+/* Allows portfolio iamges to contain 100% of columns. */
+.img-fluid-port{
+    height: 100%;
+    width: 100%;
+}
+
+/* Below are the adjustments needed to change content orientation as screen size decreases. */
+@media screen and (min-width: 980px){
+
+    .img-fluid-main {
+        height: 125;
+        width: 100;
+        margin: 0 auto;
+    }
+    
+    .container {
+        width: 55%;
+        margin-left: 20px;
+        margin-top: 20px;
     }
 }
+
+@media screen and (max-width: 768px){
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    section {
+        margin: 0 auto;
+    }
+    .img-fluid-main {
+        height: 250px;
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    .img-fluid-main {
+        height: 275;
+        width: 225;
+        margin-right: 20px;
+    }
+
+    .carousel-caption {
+        font-size: 30px;
+        background-color: rgb(0, 172, 157);
+        padding: 5px;
+        left: 4.5%;
+        bottom: 10px;
+        width: 91%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+        .col-sm-12 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .navbar {
+            padding: 0rem 1rem;
+        }
+        .navbar-brand {
+            margin-top: 0;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .img-fluid-port {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .carousel-caption {
+            font-size: 20px;
+            background-color: rgb(0, 172, 157);
+            padding: 15px;
+            left: 6.5%;
+            bottom: 15px;
+            width: 90.5%;
+        }
+    }
+
+
+
+    

@@ -11,41 +11,53 @@
 <body>
 
     <header>
-        <h4>Matt Stalzer</h4>
-
-        <nav>
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Matt Stalzer</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="index.html">About</a>
+            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section>
             <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                    <h1>About Me</h1>
-                    <div class="grey-line"></div>
-                      <img src="about-me.png" alt="Some friends and I in NOLA pre corona." height="150px" width="125px">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. r sit um dolor sit amet consectetur adipisicing elit. Non is.Lorem ipsum dolor sit amet consectetur adipisicing elit. ,Voluptatibus, incidunt veritatis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Non is.Lorem ipsum dolor sit amet consectetur adipisicing elit. , , , </p>
-                    <br>
-                    <p>Non ipsam in repellendus quasi vel iure fuga vum dolor in repellendus quasi vel iure fuga vero consequuntur, debitis, quod fugit hic quam veritatis sint itaque harum? Voluptatibus</p>
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <h1>About Me</h1>
                 </div>
+              </div>
+                  <div class="grey-line"></div>
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <img src="about-me.png" class="img-fluid-main" alt="Responsive image" height="300" width="250">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. r sit um dolor sit amet consectetur adipisicing elit. Non is.Lorem ipsum dolor sit amet consectetur adipisicing elit. ,Voluptatibus, incidunt veritatis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Non is.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <p>Non ipsam in repellendus quasi vel iure fuga vum dolor in repellendus quasi vel iure fuga vero consequuntur, debitis, quod fugit hic quam veritatis sint itaque harum? Voluptatibus</p>
+                </div>
+              </div>
             </div>
-        </section>
     </main>
+
     <div class = "teal-line"></div>
     <footer>
       <h25>&#169;Copyright</h25>
     </footer>
-</body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  </body>
 </html>

@@ -10,27 +10,26 @@
 </head>
 <body>
     <header>
-        <h4>Matt Stalzer</h4>
-        <nav>
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">Matt Stalzer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href="index.html">About</a>
+              <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
+          </div>
         </nav>
-    </header>
+      </header>
 
 <main>
-    <section class="contact-box">
-    <h1>Contact</h1>
-    <div class="grey-line"></div>
-    <form>
+    <section class="container">
+        <h1>Contact</h1>
+            <div class="grey-line"></div>
+         <form>
         <div class="form-group">
           <label for="exampleFormControlInput1">Name</label>
           <input type="email" class="form-control" id="exampleFormControlInput1"placeholder="John Smith">
@@ -43,13 +42,16 @@
           <label for="exampleFormControlTextarea1">Message</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
         </div>
-      </form>
-      </section>
-
-      <div class = "teal-line"></div>
+            </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+      
+<div class = "teal-line"></div>
+    
     <footer>
       <h25>&#169;Copyright</h25>
     </footer>
-</main>
 </body>
 </html>
