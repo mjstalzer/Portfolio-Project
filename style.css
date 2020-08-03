@@ -5,7 +5,10 @@
 
 /* Sets the background of the body on all screens. */
 body {
-    background-image: url("wire-frame-background.png");
+    background-image: url("./assets/wire-frame-background.png");
+}
+a {
+    color: white;
 }
 
 /* Styling for my name on the header */
@@ -49,7 +52,7 @@ main{
 
 /* Styling for the box that contains the focal point of the site. */
 .container {
-    background-color: white;
+    background-color: whitesmoke;
     margin-top: 20px;
     margin-left: 30px;
     width: 55%;
@@ -123,8 +126,12 @@ footer {
 
 /* Allows portfolio iamges to contain 100% of columns. */
 .img-fluid-port{
-    height: 100%;
+    height: auto;
     width: 100%;
+}
+.nav-item {
+    background-color: #f8f9fa;
+    z-index: 1;
 }
 
 /* Below are the adjustments needed to change content orientation as screen size decreases. */
@@ -143,6 +150,12 @@ footer {
 }
 
 @media screen and (max-width: 768px){
+    a {
+        font-size: 15px;
+    }
+    span {
+        font-size: 15px;
+    }
     .container {
         width: 100%;
         margin: 0 auto;
@@ -151,10 +164,9 @@ footer {
     section {
         margin: 0 auto;
     }
-    .img-fluid-main {
-        height: 250px;
-        width: 300px;
-        margin-right: 20px;
+    .img-fluid-main{
+        height: auto;
+        width: 100%;
     }
 
     .carousel-caption {
@@ -185,9 +197,8 @@ footer {
             margin: 0 auto;
             margin-top: 20px;
         }
-
         .img-fluid-main{
-            height: 100%;
+            height: auto;
             width: 100%;
         }
 
