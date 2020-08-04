@@ -6,7 +6,7 @@
 /* Sets the background of the body on all screens. */
 body {
     background-color: #343a40;
-    background-image: url("./assets/cool-background.png");
+    background-image: url("./assets/brick-wall.png");
 }
 main {
     margin-top: 0;
@@ -28,7 +28,7 @@ text-align: center !important;
 padding: 30px;
 margin-left: 50px;
 width: 200px;
-background-color:#343a40;
+background-color: #6c757d;
 color: white !important;
 float: left;
 height: 90px}
@@ -59,11 +59,22 @@ header a {
 
 /* Styling for the box that contains the focal point of the site. */
 .container {
-    background-color: lightgrey;
+    background-color: #343a40;
     margin-top: 2% !important;
     width: 65%;
     padding: 20px;
     overflow: auto;
+}
+#about-container {
+    /* background-color: #343a40; */
+    margin-top: 2% !important;
+    width: 70%;
+    padding: 20px;
+    overflow: auto;
+}
+
+.about-links {
+    padding: 30px;
 }
 
 #contact-container {
@@ -73,8 +84,10 @@ header a {
     overflow: auto;
     background-color: none !important;
 }
-/* This styles the header above the content */
-main h1 {color: rgb(0, 172, 157);}
+
+.port-card {
+    background-color: lightgrey;
+}
 
 /* Styles the line below the header and above the content. Acts as a visual divider. */
 .grey-line { width: 100%;
@@ -90,13 +103,15 @@ main h1 {color: rgb(0, 172, 157);}
             margin-bottom:20px;
             }
 /* Formats the main paragraph about me. */
+
 main p {line-height: 200%;
-        color: gray;
+        color: lightgray;
         font-weight: lighter;}
 
 #about-me-pic {
     width: 100%;
     height: auto;
+    /* padding: 10px; */
 }
 
 .card-img-top {
@@ -150,22 +165,16 @@ footer {
     span {
         font-size: 15px;
     }
-    .container {
+    #about-container {
+        /* background-color: #343a40; */
+        margin-top: 2% !important;
         width: 100%;
         margin: 0 auto;
-        margin-top: 20px;
+        padding: 20px;
+        overflow: auto;
     }
     section {
         margin: 0 auto;
-    }
-
-    .carousel-caption {
-        font-size: 30px;
-        background-color: rgb(0, 172, 157);
-        padding: 5px;
-        left: 4.5%;
-        bottom: 10px;
-        width: 91%;
     }
 }
 
@@ -181,11 +190,13 @@ footer {
         .navbar-brand {
             margin-top: 0;
         }
-
-        .container {
-            width: 90%;
+        #about-container {
+            /* background-color: #343a40; */
+            margin-top: 2% !important;
+            width: 100%;
             margin: 0 auto;
-            margin-top: 20px;
+            padding: 20px;
+            overflow: auto;
         }
     }
 
