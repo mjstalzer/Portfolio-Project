@@ -9,9 +9,8 @@ body {
     background-image: url("./assets/brick-wall.png");
 }
 main {
-    margin-top: 0;
-    min-height: 100%;
-    padding-bottom: 80px;
+    overflow: auto;
+    padding-bottom: 70px;
 }
 a {
     color: white;
@@ -89,19 +88,6 @@ header a {
     background-color: lightgrey;
 }
 
-/* Styles the line below the header and above the content. Acts as a visual divider. */
-.grey-line { width: 100%;
-            height: 4px;
-            background:
-            radial-gradient(black 15%, transparent 16%) 0 0,
-            radial-gradient(black 15%, transparent 16%) 8px 8px,
-            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-            background-color:#343a40;
-            background-size:16px 16px; 
-            margin-top: 20px;
-            margin-bottom:20px;
-            }
 /* Formats the main paragraph about me. */
 
 main p {line-height: 200%;
@@ -111,7 +97,6 @@ main p {line-height: 200%;
 #about-me-pic {
     width: 100%;
     height: auto;
-    /* padding: 10px; */
 }
 
 .card-img-top {
@@ -121,19 +106,23 @@ main p {line-height: 200%;
 
 /* Styling for the footer at the bottom of each page. */
 footer {
+    position: relative;
+    bottom: 0;
     font-size: 10px;
     color: #343a40;
     text-align: center;
     background-color: lightgrey;
-    position: relative;
-    bottom: 0;
     width: 100%;
     height: 10%;
-    padding: 15px;
-}
-#contact-footer {
     padding: 20px;
+    clear: both;
 }
+
+#port-footer {
+    position: relative;
+    margin-top: 10px;
+}
+
 .btn-outline-dark {
     margin: 0 auto;
 }
